@@ -11,11 +11,11 @@ def main(request):
 
 
 def cpu_usleep(request):
-    cpu_ns = int(request.GET['cpu_ns'])
+    cpu_ns = int(request.GET['cpu']) * 1000
 
     start_time = time.process_time_ns()
     elapsed = 0
     while elapsed < cpu_ns:
         elapsed = time.process_time_ns() - start_time
 
-    return HttpResponse(f'CPU Time {elapsed}')
+    return HttpResponse(f'CPU Time {elapsed / 1000}')
