@@ -17,9 +17,10 @@ Including another URLconf
 # from django.contrib import admin
 from django.urls import path
 
-from core.views import main
+from core.views import cpu_usleep, main
 
 urlpatterns = [
     path('', main),
+    path('cpu-usleep', cpu_usleep)
     #    path('admin/', admin.site.urls),
 ]
