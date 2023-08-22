@@ -13,8 +13,9 @@ def main(request):
 def cpu_usleep(request):
     cpu_ns = int(request.GET['cpu_ns'])
 
-    end_time = start_time = time.process_time_ns()
-    while elapsed := (end_time - start_time) < cpu_ns:
-        end_time = time.process_time_ns()
+    start_time = time.process_time_ns()
+    elapsed = 0
+    while elapsed < cpu_ns:
+        elapsed = time.process_time_ns() - start_time
 
     return HttpResponse(f'CPU Time {elapsed}')
