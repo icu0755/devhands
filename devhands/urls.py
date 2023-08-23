@@ -17,10 +17,13 @@ Including another URLconf
 # from django.contrib import admin
 from django.urls import path
 
-from core.views import cpu_usleep, main
+from core.views import cpu_usleep, main, from_db, from_cache, from_cache_many
 
 urlpatterns = [
     path('', main),
-    path('cpu-usleep', cpu_usleep)
+    path('cpu_usleep', cpu_usleep),
+    path('from_db', from_db),
+    path('from_cache', from_cache),
+    path('from_cache_many', from_cache_many),
     #    path('admin/', admin.site.urls),
 ]
