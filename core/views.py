@@ -28,7 +28,7 @@ def cpu_usleep(request):
     return HttpResponse(f'CPU Time {elapsed / 1000}')
 
 
-ROWS_NUM = 980000
+ROWS_NUM = 95897
 
 
 def from_db(request):
