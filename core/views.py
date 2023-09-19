@@ -15,7 +15,7 @@ def main(request):
 
 
 def cpu_usleep(request):
-    cpu_ns = int(request.GET.get('cpu', 0)) * 1000
+    cpu_ns = int(request.GET.get('cpu', 0)) * 1000000
     sleep = int(request.GET.get('sleep', 0))
 
     start_time = time.process_time_ns()
@@ -25,7 +25,7 @@ def cpu_usleep(request):
 
     time.sleep(sleep)
 
-    return HttpResponse(f'CPU Time {elapsed / 1000}')
+    return HttpResponse(f'CPU Time {elapsed / 1000000:,.2f}')
 
 
 ROWS_NUM = 95897
