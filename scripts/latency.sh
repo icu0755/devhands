@@ -21,7 +21,7 @@ for rate in $(seq $START $STEP $END); do
     rps=$(grep "Requests/sec" tmp_results.txt | awk '{print $2}')
     latency=$(grep "Latency" tmp_results.txt | awk '{print $2}')
 
-    echo "$URL $rate $rps $latency"
+    echo "$rate $rps $latency"
 done
 curl -X POST \
   -H "Authorization: Bearer glsa_hRCH6dgJIWMfcvSQEgl0tnj7MCY5KMhk_a298d46f" \
@@ -49,7 +49,7 @@ for rate in $(seq $START $STEP $END); do
     rps=$(grep "Requests/sec" tmp_results.txt | awk '{print $2}')
     latency=$(grep "Latency" tmp_results.txt | awk '{print $2}')
 
-    echo "$URL $rate $rps $latency"
+    echo "$rate $rps $latency"
 done
 curl -X POST \
   -H "Authorization: Bearer glsa_hRCH6dgJIWMfcvSQEgl0tnj7MCY5KMhk_a298d46f" \
@@ -77,7 +77,7 @@ for rate in $(seq $START $STEP $END); do
     rps=$(grep "Requests/sec" tmp_results.txt | awk '{print $2}')
     latency=$(grep "Latency" tmp_results.txt | awk '{print $2}')
 
-    echo "$URL $rate $rps $latency"
+    echo "$rate $rps $latency"
 done
 curl -X POST \
   -H "Authorization: Bearer glsa_hRCH6dgJIWMfcvSQEgl0tnj7MCY5KMhk_a298d46f" \
@@ -105,7 +105,7 @@ for rate in $(seq $START $STEP $END); do
     rps=$(grep "Requests/sec" tmp_results.txt | awk '{print $2}')
     latency=$(grep "Latency" tmp_results.txt | awk '{print $2}')
 
-    echo "$URL $rate $rps $latency"
+    echo "$rate $rps $latency"
 done
 curl -X POST \
   -H "Authorization: Bearer glsa_hRCH6dgJIWMfcvSQEgl0tnj7MCY5KMhk_a298d46f" \
@@ -133,7 +133,7 @@ for rate in $(seq $START $STEP $END); do
     rps=$(grep "Requests/sec" tmp_results.txt | awk '{print $2}')
     latency=$(grep "Latency" tmp_results.txt | awk '{print $2}')
 
-    echo "$URL $rate $rps $latency"
+    echo "$rate $rps $latency"
 done
 curl -X POST \
   -H "Authorization: Bearer glsa_hRCH6dgJIWMfcvSQEgl0tnj7MCY5KMhk_a298d46f" \
@@ -161,7 +161,7 @@ for rate in $(seq $START $STEP $END); do
     rps=$(grep "Requests/sec" tmp_results.txt | awk '{print $2}')
     latency=$(grep "Latency" tmp_results.txt | awk '{print $2}')
 
-    echo "$URL $rate $rps $latency"
+    echo "$rate $rps $latency"
 done
 curl -X POST \
   -H "Authorization: Bearer glsa_hRCH6dgJIWMfcvSQEgl0tnj7MCY5KMhk_a298d46f" \
@@ -189,7 +189,7 @@ for rate in $(seq $START $STEP $END); do
     rps=$(grep "Requests/sec" tmp_results.txt | awk '{print $2}')
     latency=$(grep "Latency" tmp_results.txt | awk '{print $2}')
 
-    echo "$URL $rate $rps $latency"
+    echo "$rate $rps $latency"
 done
 curl -X POST \
   -H "Authorization: Bearer glsa_hRCH6dgJIWMfcvSQEgl0tnj7MCY5KMhk_a298d46f" \
@@ -217,7 +217,7 @@ for rate in $(seq $START $STEP $END); do
     rps=$(grep "Requests/sec" tmp_results.txt | awk '{print $2}')
     latency=$(grep "Latency" tmp_results.txt | awk '{print $2}')
 
-    echo "$URL $rate $rps $latency"
+    echo "$rate $rps $latency"
 done
 curl -X POST \
   -H "Authorization: Bearer glsa_hRCH6dgJIWMfcvSQEgl0tnj7MCY5KMhk_a298d46f" \
@@ -245,7 +245,7 @@ for rate in $(seq $START $STEP $END); do
     rps=$(grep "Requests/sec" tmp_results.txt | awk '{print $2}')
     latency=$(grep "Latency" tmp_results.txt | awk '{print $2}')
 
-    echo "$URL $rate $rps $latency"
+    echo "$rate $rps $latency"
 done
 curl -X POST \
   -H "Authorization: Bearer glsa_hRCH6dgJIWMfcvSQEgl0tnj7MCY5KMhk_a298d46f" \
@@ -273,7 +273,7 @@ for rate in $(seq $START $STEP $END); do
     rps=$(grep "Requests/sec" tmp_results.txt | awk '{print $2}')
     latency=$(grep "Latency" tmp_results.txt | awk '{print $2}')
 
-    echo "$URL $rate $rps $latency"
+    echo "$rate $rps $latency"
 done
 curl -X POST \
   -H "Authorization: Bearer glsa_hRCH6dgJIWMfcvSQEgl0tnj7MCY5KMhk_a298d46f" \
@@ -301,7 +301,7 @@ for rate in $(seq $START $STEP $END); do
     rps=$(grep "Requests/sec" tmp_results.txt | awk '{print $2}')
     latency=$(grep "Latency" tmp_results.txt | awk '{print $2}')
 
-    echo "$URL $rate $rps $latency"
+    echo "$rate $rps $latency"
 done
 curl -X POST \
   -H "Authorization: Bearer glsa_hRCH6dgJIWMfcvSQEgl0tnj7MCY5KMhk_a298d46f" \
