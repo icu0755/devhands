@@ -118,10 +118,10 @@ sleep 300
 curl -X POST \
   -H "Authorization: Bearer glsa_hRCH6dgJIWMfcvSQEgl0tnj7MCY5KMhk_a298d46f" \
   -H "Content-Type: application/json" \
-  -d '{"text": "START sleep=1", "dashboardUID":"L10lV1Xik"}' \
+  -d '{"text": "START sleep=100", "dashboardUID":"L10lV1Xik"}' \
   http://icu0755.devhands.cloud:3000/api/annotations
-echo "START sleep=1"
-URL="http://icu0755.devhands.cloud/cpu_usleep?sleep=1"
+echo "START sleep=100"
+URL="http://icu0755.devhands.cloud/cpu_usleep?sleep=100"
 START=2
 END=20
 STEP=1
@@ -138,9 +138,9 @@ done
 curl -X POST \
   -H "Authorization: Bearer glsa_hRCH6dgJIWMfcvSQEgl0tnj7MCY5KMhk_a298d46f" \
   -H "Content-Type: application/json" \
-  -d '{"text": "STOP sleep=1", "dashboardUID":"L10lV1Xik"}' \
+  -d '{"text": "STOP sleep=100", "dashboardUID":"L10lV1Xik"}' \
   http://icu0755.devhands.cloud:3000/api/annotations
-echo "STOP sleep=1"
+echo "STOP sleep=100"
 sleep 300
 
 curl -X POST \
