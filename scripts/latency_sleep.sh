@@ -10,9 +10,9 @@ curl -X POST \
   http://icu0755.devhands.cloud:3000/api/annotations
 echo "START sleep=100"
 URL="http://icu0755.devhands.cloud/cpu_usleep?sleep=100"
-START=2
-END=20
-STEP=1
+START=20
+END=180
+STEP=20
 for rate in $(seq $START $STEP $END); do
     # Run wrk2 benchmark and save results
     wrk2 -t4 -c100 -d60s -R "$rate" "$URL" > tmp_results.txt
