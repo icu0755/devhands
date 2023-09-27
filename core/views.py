@@ -15,8 +15,13 @@ def main(request):
 
 
 def cpu_usleep(request):
+    """
+    Query params:
+    - cpu (ms) - loads cpu for given amount of ms
+    - sleep (ms) - sleeps for given amount of ms
+    """
     cpu_ns = int(request.GET.get('cpu', 0)) * 1000000
-    sleep = int(request.GET.get('sleep', 0))
+    sleep = int(request.GET.get('sleep', 0)) / 1000
 
     start_time = time.process_time_ns()
     elapsed = 0
